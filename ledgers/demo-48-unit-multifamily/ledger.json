@@ -1,0 +1,117 @@
+{
+  "schema": "pencil-ledger/0.5",
+  "subject": "DEMO: 48-Unit Multifamily, 200 Sample Court",
+  "owner": "DEMO: Example Buyer LLC (commissioning party)",
+  "recipients": [],
+  "stage": "Pre-LOI",
+  "as_of": "2026-01-20",
+  "profiles": [
+    "financials"
+  ],
+  "review": {
+    "status": "DRAFT"
+  },
+  "demo": true,
+  "entries": [
+    {
+      "id": "E1",
+      "key": "fin.unit_mix",
+      "object": "Unit mix",
+      "stated": {
+        "value": "24 one-bedrooms and 24 two-bedrooms",
+        "by": "Seller",
+        "source": "OM, as relayed (document not supplied)"
+      },
+      "evidence": {
+        "source": "Rent roll, as relayed (document not supplied)",
+        "checked_by": "relayed",
+        "checker": "the requester",
+        "seen_by_pencil": false
+      },
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "As relayed, the rent roll shows 20 one-bedrooms, 26 two-bedrooms and 2 units offline against a stated 24 and 24.",
+      "needs": "The rent roll and the OM. With them the unit mix can be confirmed or shown not to hold.",
+      "supersedes": null
+    },
+    {
+      "id": "E2",
+      "key": "fin.occupancy",
+      "object": "Occupancy",
+      "stated": {
+        "value": "100% occupied",
+        "by": "Seller",
+        "source": "OM, as relayed (document not supplied)"
+      },
+      "evidence": {
+        "source": "Rent roll, as relayed (document not supplied)",
+        "checked_by": "relayed",
+        "checker": "the requester",
+        "seen_by_pencil": false
+      },
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "As relayed, 46 of 48 units carry rent, which is 95.83% by unit count, against a stated 100%.",
+      "needs": "The rent roll. With it occupancy can be computed from the document itself.",
+      "supersedes": null
+    },
+    {
+      "id": "E3",
+      "key": "fin.rent",
+      "object": "Scheduled rent",
+      "stated": {
+        "value": "$1,450 per one-bedroom and $1,850 per two-bedroom ($79,200 a month)",
+        "by": "Seller",
+        "source": "OM, as relayed (document not supplied)"
+      },
+      "evidence": {
+        "source": "Rent roll, as relayed (document not supplied)",
+        "checked_by": "relayed",
+        "checker": "the requester",
+        "seen_by_pencil": false
+      },
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "As relayed, the rent roll averages $1,410 and $1,790, which totals $74,740 a month: $4,460 a month below the stated figure.",
+      "needs": "The rent roll and the leases. With them rent can be verified unit by unit.",
+      "supersedes": null
+    },
+    {
+      "id": "E4",
+      "key": "fin.lease_terms",
+      "object": "Lease terms",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No lease terms stated and no leases supplied.",
+      "needs": "Leases or lease abstracts. Lets the parties see expirations, concessions and month-to-month status.",
+      "supersedes": null
+    },
+    {
+      "id": "E5",
+      "key": "fin.expenses",
+      "object": "Operating expenses",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No expense figures stated and no operating statement supplied.",
+      "needs": "Trailing 12-month operating statement. Lets the parties see what the property costs to run.",
+      "supersedes": null
+    },
+    {
+      "id": "E6",
+      "key": "fin.noi",
+      "object": "Net operating income",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No NOI stated. It cannot be computed without verified rent and expenses.",
+      "needs": "Verified rent and the operating statement. Lets the parties compute NOI themselves.",
+      "supersedes": null
+    }
+  ],
+  "alignments": []
+}
